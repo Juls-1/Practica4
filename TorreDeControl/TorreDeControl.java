@@ -11,9 +11,9 @@ public class TorreDeControl {
 
     public TorreDeControl(ArrayList<Aeronave> colaDeAterrizajes, ArrayList<Aeronave> colaDeDespegues, boolean pistaLibre) {
         this.colaDeAterrizajes = colaDeAterrizajes;
-        this.colaDeAterrizajes.sort((a1, a2) -> a1.getPrioridad() - a2.getPrioridad());
+        ordenarCola(colaDeAterrizajes);
         this.colaDeDespegues = colaDeDespegues;
-        this.colaDeDespegues.sort((a1, a2) -> a1.getPrioridad() - a2.getPrioridad());
+        ordenarCola(colaDeDespegues);
         this.pistaLibre = pistaLibre;
     }
     public TorreDeControl() {
@@ -24,24 +24,29 @@ public class TorreDeControl {
 
     public void registrarAeronaveParaAterrizaje(Aeronave aeronave){
         colaDeAterrizajes.add(aeronave);
-        colaDeAterrizajes.sort((a1, a2) -> a1.getPrioridad() - a2.getPrioridad());
+        ordenarCola(colaDeAterrizajes);
     }
     public void registrarAeronaveParaDespegue(Aeronave aeronave){
         colaDeDespegues.add(aeronave);
-        colaDeDespegues.sort((a1, a2) -> a1.getPrioridad() - a2.getPrioridad());
+        ordenarCola(colaDeDespegues);
     }
 
     public void procesarSiguienteEvento() {
         if (pistaLibre) {
             if (!colaDeAterrizajes.isEmpty()) {
                 eventoActual(colaDeAterrizajes);
+                
             } else if (!colaDeDespegues.isEmpty()) {
                 eventoActual(colaDeDespegues);
-            }
+                }
+            
             liberarPista();;
         }
     }
-    
+
+    public void ordenarCola(ArrayList<Aeronave> cola){
+        cola.sort((a1, a2) -> a1.getPrioridad() - a2.getPrioridad());
+    }     
     public void liberarPista(){
         pistaLibre = true;
     }
@@ -50,6 +55,7 @@ public class TorreDeControl {
     }
     public void eventoActual(ArrayList<Aeronave> a){
         ocuparPista();
+        System.out.println(a.get(0).getId()+" esta ocupando la pista");
         Aeronave aterrizandoODespegando = a.remove(0);
         aterrizandoODespegando.setOperacionExitosa(true);
         liberarPista();

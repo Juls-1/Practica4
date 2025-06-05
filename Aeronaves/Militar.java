@@ -4,7 +4,7 @@ public class Militar extends Aeronave{
 
     public Militar(String id) {
         super(id);
-        this.setTipo("Militar");
+        this.setTipo("Militar   ");
         this.setPrioridad(PRIORIDAD_MILITAR);
     }
 }

@@ -4,7 +4,7 @@ public class Carga extends Aeronave {
 
     public Carga(String id) {
         super(id);
-        this.setTipo("Carga");
+        this.setTipo("Carga     ");
         this.setPrioridad(PRIORIDAD_CARGA);
     }
 }

@@ -12,19 +12,65 @@ public class Simulador{
         Carga carga = new Carga("D012");
         Emergencia emergencia2 = new Emergencia("E345");
 
+        torreDeControl.registrarAeronaveParaDespegue(carga);
         torreDeControl.registrarAeronaveParaDespegue(emergencia);
         torreDeControl.registrarAeronaveParaDespegue(militar);
         torreDeControl.registrarAeronaveParaDespegue(pasajeros);
-        torreDeControl.registrarAeronaveParaDespegue(carga);
         torreDeControl.registrarAeronaveParaDespegue(emergencia2);
 
 
-        System.out.println(torreDeControl);
+        militar.solicitarAterrizaje(torreDeControl);
+        emergencia.solicitarAterrizaje(torreDeControl);
+        carga.solicitarAterrizaje(torreDeControl);
+        pasajeros.solicitarAterrizaje(torreDeControl);
+        emergencia2.solicitarAterrizaje(torreDeControl);
 
+
+        System.out.println(torreDeControl);
+        System.out.println("---------------------------------------------------------------");
         torreDeControl.procesarSiguienteEvento();
-        System.out.println("-------------------------");
+        System.out.println("---------------------------------------------------------------");
         System.out.println(torreDeControl);
-
-
+        System.out.println("---------------------------------------------------------------");
+        torreDeControl.procesarSiguienteEvento();
+        System.out.println("---------------------------------------------------------------");   
+        System.out.println(torreDeControl);
+        System.out.println("---------------------------------------------------------------");
+        torreDeControl.procesarSiguienteEvento();
+        System.out.println("---------------------------------------------------------------");   
+        System.out.println(torreDeControl);
+        System.out.println("---------------------------------------------------------------");
+        torreDeControl.procesarSiguienteEvento();
+        System.out.println("---------------------------------------------------------------");   
+        System.out.println(torreDeControl);
+        System.out.println("---------------------------------------------------------------");
+        torreDeControl.procesarSiguienteEvento();
+        System.out.println("---------------------------------------------------------------");   
+        System.out.println(torreDeControl); 
+        System.out.println("---------------------------------------------------------------");
+        torreDeControl.procesarSiguienteEvento();
+        System.out.println("---------------------------------------------------------------");   
+        System.out.println(torreDeControl);
+        System.out.println("---------------------------------------------------------------");
+        torreDeControl.procesarSiguienteEvento();
+        System.out.println("---------------------------------------------------------------");   
+        System.out.println(torreDeControl);     
+        System.out.println("---------------------------------------------------------------");
+        torreDeControl.procesarSiguienteEvento();
+        System.out.println("---------------------------------------------------------------");   
+        System.out.println(torreDeControl); 
+        System.out.println("---------------------------------------------------------------");
+        torreDeControl.procesarSiguienteEvento();
+        System.out.println("---------------------------------------------------------------");   
+        militar.solicitarAterrizaje(torreDeControl);
+        System.out.println(torreDeControl);        
+        System.out.println("---------------------------------------------------------------");
+        torreDeControl.procesarSiguienteEvento();
+        System.out.println("---------------------------------------------------------------");   
+        System.out.println(torreDeControl); 
+        System.out.println("---------------------------------------------------------------");
+        torreDeControl.procesarSiguienteEvento();
+        System.out.println("---------------------------------------------------------------");   
+        System.out.println(torreDeControl);                                                            
     }
 }

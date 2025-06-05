@@ -4,7 +4,7 @@ public class Pasajeros extends Aeronave {
 
     public Pasajeros(String id) {
         super(id);
-        this.setTipo("Pasajeros");
+        this.setTipo("Pasajeros ");
         this.setPrioridad(PRIORIDAD_PASAJEROS);
     }
 }

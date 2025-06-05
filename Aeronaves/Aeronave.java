@@ -26,8 +26,8 @@ abstract public class Aeronave {
     public void solicitarAterrizaje(TorreDeControl torreDeControl) {torreDeControl.registrarAeronaveParaAterrizaje(this);};
 
     public String toString(){
-        return  "id: "+id+ 
-                "\ntipo: "+tipo+ 
-                "\nprioridad: "+prioridad;
+        return  "\n\tid: "+id+ 
+                "\ttipo: "+tipo+ 
+                "\tprioridad: "+prioridad;
     }
 }
