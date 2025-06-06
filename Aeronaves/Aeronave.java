@@ -25,6 +25,8 @@ abstract public class Aeronave {
     public void solicitarDespegue(TorreDeControl torreDeControl) {torreDeControl.registrarAeronaveParaDespegue(this);};
     public void solicitarAterrizaje(TorreDeControl torreDeControl) {torreDeControl.registrarAeronaveParaAterrizaje(this);};
 
+    abstract public int getTiempoDeUsoDePista();
+
     public String toString(){
         return  "\n\tid: "+id+ 
                 "\ttipo: "+tipo+ 
