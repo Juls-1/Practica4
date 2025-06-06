@@ -70,7 +70,7 @@ public class TorreDeControl {
         if (ocurrioAccidente(aeronaveActual, a)) return;
 
         if (ocurrioAtrasoAvion()) {
-            System.out.println("el avion se ha atrasado");
+            System.out.println(aeronaveActual.getId() + " se ha atrasado");
             tiempoDeEsperaParaSiguientePaso(TIEMPO_DE_RETRASO);
         }
 
@@ -86,7 +86,7 @@ public class TorreDeControl {
 
     private boolean ocurrioAccidente(Aeronave aeronaveActual, ArrayList<Aeronave> a) {
         if (new Random().nextDouble() < PROBABILIDAD_DE_ACCIDENTE) {
-            System.out.println("el avion ha sufrido un accidente");
+            System.out.println(aeronaveActual.getId() + " ha sufrido un accidente");
             tiempoDeEsperaParaSiguientePaso(TIEMPO_ACCIDENTE);
             aeronaveActual.setOperacionExitosa(false);
             a.remove(0);

@@ -1,0 +1,150 @@
+jun 06, 2025 1:16:57 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Iniciando simulacion de control aereo
+jun 06, 2025 1:16:57 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Aeronaves creadas: A123, B456, C789, D012, E345
+jun 06, 2025 1:16:57 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Aeronave de carga D012 registrada para despegue
+jun 06, 2025 1:16:57 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Aeronave de emergencia A123 registrada para despegue
+jun 06, 2025 1:16:57 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Aeronave militar B456 registrada para despegue
+jun 06, 2025 1:16:57 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Aeronave de pasajeros C789 registrada para despegue
+jun 06, 2025 1:16:57 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Aeronave de emergencia E345 registrada para despegue
+jun 06, 2025 1:16:57 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Aeronave militar B456 solicitó aterrizaje
+jun 06, 2025 1:16:57 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Aeronave de emergencia A123 solicitó aterrizaje
+jun 06, 2025 1:16:57 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Aeronave de carga D012 solicitó aterrizaje
+jun 06, 2025 1:16:57 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Aeronave de pasajeros C789 solicitó aterrizaje
+jun 06, 2025 1:16:57 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Aeronave de emergencia E345 solicitó aterrizaje
+jun 06, 2025 1:16:57 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Estado actual de la torre de control:
+colaDeAterrizajes: [
+	id: A123	tipo: Emergencia	prioridad: 1, 
+	id: E345	tipo: Emergencia	prioridad: 1, 
+	id: B456	tipo: Militar   	prioridad: 2, 
+	id: C789	tipo: Pasajeros 	prioridad: 3, 
+	id: D012	tipo: Carga     	prioridad: 4]
+colaDeDespegues: [
+	id: A123	tipo: Emergencia	prioridad: 1, 
+	id: E345	tipo: Emergencia	prioridad: 1, 
+	id: B456	tipo: Militar   	prioridad: 2, 
+	id: C789	tipo: Pasajeros 	prioridad: 3, 
+	id: D012	tipo: Carga     	prioridad: 4]
+jun 06, 2025 1:17:05 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Procesado evento #1
+jun 06, 2025 1:17:05 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Estado de la torre despues del evento:
+colaDeAterrizajes: [
+	id: E345	tipo: Emergencia	prioridad: 1, 
+	id: B456	tipo: Militar   	prioridad: 2, 
+	id: C789	tipo: Pasajeros 	prioridad: 3, 
+	id: D012	tipo: Carga     	prioridad: 4]
+colaDeDespegues: [
+	id: A123	tipo: Emergencia	prioridad: 1, 
+	id: E345	tipo: Emergencia	prioridad: 1, 
+	id: B456	tipo: Militar   	prioridad: 2, 
+	id: C789	tipo: Pasajeros 	prioridad: 3, 
+	id: D012	tipo: Carga     	prioridad: 4]
+jun 06, 2025 1:17:13 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Procesado evento #2
+jun 06, 2025 1:17:13 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Estado de la torre despues del evento:
+colaDeAterrizajes: [
+	id: B456	tipo: Militar   	prioridad: 2, 
+	id: C789	tipo: Pasajeros 	prioridad: 3, 
+	id: D012	tipo: Carga     	prioridad: 4]
+colaDeDespegues: [
+	id: A123	tipo: Emergencia	prioridad: 1, 
+	id: E345	tipo: Emergencia	prioridad: 1, 
+	id: B456	tipo: Militar   	prioridad: 2, 
+	id: C789	tipo: Pasajeros 	prioridad: 3, 
+	id: D012	tipo: Carga     	prioridad: 4]
+jun 06, 2025 1:17:22 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Procesado evento #3
+jun 06, 2025 1:17:22 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Estado de la torre despues del evento:
+colaDeAterrizajes: [
+	id: C789	tipo: Pasajeros 	prioridad: 3, 
+	id: D012	tipo: Carga     	prioridad: 4]
+colaDeDespegues: [
+	id: A123	tipo: Emergencia	prioridad: 1, 
+	id: E345	tipo: Emergencia	prioridad: 1, 
+	id: B456	tipo: Militar   	prioridad: 2, 
+	id: C789	tipo: Pasajeros 	prioridad: 3, 
+	id: D012	tipo: Carga     	prioridad: 4]
+jun 06, 2025 1:17:30 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Procesado evento #4
+jun 06, 2025 1:17:30 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Estado de la torre despues del evento:
+colaDeAterrizajes: [
+	id: D012	tipo: Carga     	prioridad: 4]
+colaDeDespegues: [
+	id: A123	tipo: Emergencia	prioridad: 1, 
+	id: E345	tipo: Emergencia	prioridad: 1, 
+	id: B456	tipo: Militar   	prioridad: 2, 
+	id: C789	tipo: Pasajeros 	prioridad: 3, 
+	id: D012	tipo: Carga     	prioridad: 4]
+jun 06, 2025 1:17:38 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Procesado evento #5
+jun 06, 2025 1:17:38 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Estado de la torre despues del evento:
+colaDeAterrizajes: []
+colaDeDespegues: [
+	id: A123	tipo: Emergencia	prioridad: 1, 
+	id: E345	tipo: Emergencia	prioridad: 1, 
+	id: B456	tipo: Militar   	prioridad: 2, 
+	id: C789	tipo: Pasajeros 	prioridad: 3, 
+	id: D012	tipo: Carga     	prioridad: 4]
+jun 06, 2025 1:17:46 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Procesado evento #6
+jun 06, 2025 1:17:46 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Estado de la torre despues del evento:
+colaDeAterrizajes: []
+colaDeDespegues: [
+	id: E345	tipo: Emergencia	prioridad: 1, 
+	id: B456	tipo: Militar   	prioridad: 2, 
+	id: C789	tipo: Pasajeros 	prioridad: 3, 
+	id: D012	tipo: Carga     	prioridad: 4]
+jun 06, 2025 1:17:53 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Procesado evento #7
+jun 06, 2025 1:17:53 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Estado de la torre despues del evento:
+colaDeAterrizajes: []
+colaDeDespegues: [
+	id: B456	tipo: Militar   	prioridad: 2, 
+	id: C789	tipo: Pasajeros 	prioridad: 3, 
+	id: D012	tipo: Carga     	prioridad: 4]
+jun 06, 2025 1:18:01 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Procesado evento #8
+jun 06, 2025 1:18:01 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Estado de la torre despues del evento:
+colaDeAterrizajes: []
+colaDeDespegues: [
+	id: C789	tipo: Pasajeros 	prioridad: 3, 
+	id: D012	tipo: Carga     	prioridad: 4]
+jun 06, 2025 1:18:09 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Procesado evento #9
+jun 06, 2025 1:18:09 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Estado de la torre despues del evento:
+colaDeAterrizajes: []
+colaDeDespegues: [
+	id: D012	tipo: Carga     	prioridad: 4]
+jun 06, 2025 1:18:18 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Procesado evento #10
+jun 06, 2025 1:18:18 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Estado de la torre despues del evento:
+colaDeAterrizajes: []
+colaDeDespegues: []
+jun 06, 2025 1:18:18 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Nueva solicitud de aterrizaje de aeronave militar B456
+jun 06, 2025 1:18:18 P. M. Logger.SimulacionLogger main
+INFORMACIÓN: Estado final de la torre de control:
+colaDeAterrizajes: [
+	id: B456	tipo: Militar   	prioridad: 2]
+colaDeDespegues: []
